@@ -35,10 +35,10 @@
 </template>
 
 <script lang="ts" setup>
-  import { onMounted, reactive, ref } from "vue";
+  import { onMounted, ref } from "vue";
   import { container } from "@/services/inversify/inversify.config";
   import { TYPES } from "@/services/inversify/type";
-  import { ApiGithubService as GithubService } from "@/services/ApiGithubService";
+  import { ApiGithubService as GithubService } from "@/services/api-github-service/ApiGithubService";
 
   const ApiGithubService = container.get<GithubService>(TYPES.ApiGitHubService);
 
